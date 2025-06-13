@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @Builder(builderClassName = "ClassBuilder")
 public class RequestClassLoader {
 
-    ConcurrentHashMap<Class<?>, List<String>> requests;
+    private final ConcurrentHashMap<Class<?>, List<String>> requests;
 
 
     public List<String> findByClass(Class<?> clazz) {

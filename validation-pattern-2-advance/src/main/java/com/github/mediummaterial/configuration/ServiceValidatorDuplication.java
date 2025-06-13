@@ -52,8 +52,8 @@ public class ServiceValidatorDuplication {
 
     @Bean
     public RequestClassLoader requestClassLoader() {
-        RequestClassLoader.ClassBuilder builder = RequestClassLoader.builder();
-        return builder.addRequest(request)
+        return RequestClassLoader.builder()
+                .addRequest(request)
                 .build();
     }
 }

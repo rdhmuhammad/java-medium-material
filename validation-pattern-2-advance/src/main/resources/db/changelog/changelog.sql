@@ -14,9 +14,9 @@ create table user
     created_by      VARCHAR(200) NULL,
     created_date    TIMESTAMP NULL,
     modified_by     VARCHAR(200) NULL,
-    modified_date   TIMESTAMP NULL,
+    modified_date   TIMESTAMP NULL
 
-)
+);
 
 --changeset ridho:create-table-config
 CREATE TABLE app_configs
